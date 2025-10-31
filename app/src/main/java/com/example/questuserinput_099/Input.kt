@@ -56,10 +56,14 @@ fun Input(modifier: Modifier) {
                 .height(100.dp)
                 .padding(15.dp)
         ) {
-            Text(stringResource(R.string.header)
-
+            Text(
+                text = "Formulir Pendaftaran",
+                fontSize = 30.sp,
+                color = Color.White,
+                modifier = Modifier.padding(start = 10.dp)
             )
-
         }
+
+
     }
 }
