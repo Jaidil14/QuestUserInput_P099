@@ -23,6 +23,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -71,12 +72,33 @@ fun Input(modifier: Modifier) {
         Card(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp),
+                .padding(horizontal = 15.dp),
             shape = RoundedCornerShape(25.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 5.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White)
         ) {
+            Column(
+                modifier = Modifier.padding(20.dp)
+            ) {
+                Text(
+                    text = "NAMA LENGKAP",
+                    fontSize = 15.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Gray,
+                    modifier = Modifier.padding(bottom = 4.dp)
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    label = {Text ("Isian nama lengkap")},
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(8.dp),
+                    onValueChange = {textNama = it}
+                )
 
+                Spacer(modifier = Modifier.height(15.dp))
+
+
+            }
         }
 
     }
