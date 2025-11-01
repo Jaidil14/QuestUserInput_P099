@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.OutlinedTextField
@@ -37,8 +38,6 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun Input(modifier: Modifier) {
     var textNama by remember { mutableStateOf("" ) }
-    var textJK by remember { mutableStateOf("" ) }
-    var textStatus by remember { mutableStateOf("" ) }
     var textAlamat by remember { mutableStateOf("" ) }
 
     var nama by remember { mutableStateOf("" ) }
