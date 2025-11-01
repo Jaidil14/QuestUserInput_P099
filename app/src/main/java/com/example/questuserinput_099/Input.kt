@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -37,10 +36,8 @@ fun Input(modifier: Modifier) {
     var textNama by remember { mutableStateOf("" ) }
     var textAlamat by remember { mutableStateOf("" ) }
 
-    var nama by remember { mutableStateOf("" ) }
     var jenis by remember { mutableStateOf("" ) }
     var statusPerkawinan by remember { mutableStateOf("" ) }
-    var alamat by remember { mutableStateOf("" ) }
 
     val gender:List<String> = listOf("Laki-laki", "Perempuan")
     val status:List<String> = listOf("Janda","Lajang","Duda")
