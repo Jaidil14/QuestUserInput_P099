@@ -119,8 +119,8 @@ fun Input(modifier: Modifier) {
                                 .padding(vertical = 4.dp)
                         ) {
                             RadioButton(
-                                selected = (gender == option),
-                                onClick = { gender = option },
+                                selected = (jenis == option),
+                                onClick = { jenis = option },
                                 colors = RadioButtonDefaults.colors(selectedColor = darkPurple)
                             )
                             Text(
@@ -140,7 +140,7 @@ fun Input(modifier: Modifier) {
                     color = Color.Gray
                 )
                 Column {
-                    statusPerkawinan.forEach { option ->
+                    status.forEach { option ->
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
                             modifier = Modifier
