@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -52,20 +53,19 @@ fun Input(modifier: Modifier) {
         modifier = Modifier
             .fillMaxSize()
             .background(backgroundColor)
-            .padding(top = 50.dp)
+            .padding(top = 25.dp)
     ) {
         Box (
             modifier = Modifier
                 .fillMaxWidth()
                 .background(lightPurple)
                 .height(100.dp)
-                .padding(15.dp)
+                .padding(15.dp, top = 55.dp)
         ) {
             Text(
                 text = "Formulir Pendaftaran",
                 fontSize = 30.sp,
-                color = Color.White,
-                modifier = Modifier.padding(start = 10.dp)
+                color = Color.White
             )
         }
 
@@ -127,7 +127,7 @@ fun Input(modifier: Modifier) {
                     }
                 }
 
-                Spacer(modifier = Modifier.height(15.dp))
+                Spacer(modifier = Modifier.height(10.dp))
 
                 Text(
                     text = "STATUS PERKAWINAN",
@@ -156,7 +156,7 @@ fun Input(modifier: Modifier) {
                     }
                 }
 
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(10.dp))
 
                 Text(
                     text = "ALAMAT",
@@ -172,7 +172,7 @@ fun Input(modifier: Modifier) {
                     modifier = Modifier.fillMaxWidth()
                 )
 
-                Spacer(modifier = Modifier.height(32.dp))
+                Spacer(modifier = Modifier.height(20.dp))
 
                 Button(
                     onClick = {
@@ -191,7 +191,7 @@ fun Input(modifier: Modifier) {
                     )
                 }
 
-                Spacer(modifier = Modifier.height(2.dp))
+                Spacer(modifier = Modifier.height(10.dp))
             }
         }
 
