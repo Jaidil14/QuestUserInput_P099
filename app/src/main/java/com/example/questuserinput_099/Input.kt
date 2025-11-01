@@ -162,6 +162,22 @@ fun Input(modifier: Modifier) {
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                Text(
+                    text = "ALAMAT",
+                    fontSize = 15.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Gray,
+                    modifier = Modifier.padding(bottom = 4.dp)
+                )
+                OutlinedTextField(
+                    value = alamat,
+                    onValueChange = { alamat = it },
+                    label = { Text("Alamat") },
+                    modifier = Modifier.fillMaxWidth()
+                )
+
+                Spacer(modifier = Modifier.height(32.dp))
+
 
             }
         }
