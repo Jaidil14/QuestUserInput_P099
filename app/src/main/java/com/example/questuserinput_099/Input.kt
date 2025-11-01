@@ -170,8 +170,8 @@ fun Input(modifier: Modifier) {
                     modifier = Modifier.padding(bottom = 4.dp)
                 )
                 OutlinedTextField(
-                    value = alamat,
-                    onValueChange = { alamat = it },
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
                     label = { Text("Alamat") },
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -180,6 +180,7 @@ fun Input(modifier: Modifier) {
 
                 Button(
                     onClick = {
+
                     },
                     modifier = Modifier
                         .fillMaxWidth()
